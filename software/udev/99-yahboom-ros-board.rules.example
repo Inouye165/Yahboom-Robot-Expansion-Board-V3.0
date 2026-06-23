@@ -1,0 +1,10 @@
+# Example udev rule for Yahboom Robot Expansion Board V3.0 (CH340 USB-to-Serial bridge).
+# 
+# 🛠️ Verification commands:
+# 1. Run `lsusb` to check the actual idVendor and idProduct of the CH340 chip.
+# 2. Run `udevadm info -a -n /dev/ttyUSB0` to query all attributes of the serial device node.
+#
+# If your board uses a different USB-to-Serial bridge chip (e.g. CP2102, FTDI), 
+# update the idVendor and idProduct values accordingly.
+
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="ttyUSB_ROSBOARD", MODE="0666"

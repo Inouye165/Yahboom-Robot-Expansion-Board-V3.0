@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# ROS / ROS2
+build/
+install/
+log/
+.cache/
+colcon_*/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ROS Bag files
+*.bag
+*.db3
+*.mcap
+*.log
+
+# Git LFS recommendation for large media files (videos, high-res captures)
+# Note: Keep external-info/screenshots/ tracked, but do not commit files > 10MB
+# Use git-lfs for large assets if needed.
