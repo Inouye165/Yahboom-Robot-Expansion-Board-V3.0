@@ -31,3 +31,8 @@ Thumbs.db
 # Git LFS recommendation for large media files (videos, high-res captures)
 # Note: Keep external-info/screenshots/ tracked, but do not commit files > 10MB
 # Use git-lfs for large assets if needed.
+
+# Large 3D mechanical model files (>100MB)
+*.step
+*.STEP
+
